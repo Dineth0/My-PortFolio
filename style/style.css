@@ -1,0 +1,423 @@
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+header{
+    background: radial-gradient( #005E9D, #002137);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    position: relative;
+}
+header>nav>img{
+    position:relative ;
+    top:0;
+    left:20px;
+}
+nav{
+    display: flex;
+    padding: 0.5px 0.5px;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap:20px;
+    position: fixed;
+    position: absolute;
+    right: 10px;
+}
+nav ul li a {
+    color: #fff;
+  text-decoration: none;
+    font-size: 1.2rem;
+}
+nav ul li a:hover {
+    color: #807d7d;
+    text-align: right;
+}
+#home {
+    height: 100vh;
+    background: url("/assests/images/desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+#home::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0D1B2A;
+    opacity: 0.7;
+    z-index: -1;
+}
+#home#git:hover{
+
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth animation */
+
+}
+
+
+
+#home>h1{
+    font-family: "Kristen ITC", sans-serif;
+    color: aliceblue;
+    font-size: 90px;
+    text-align: center;
+    text-shadow: 10px 10px 20px #6d93e0;
+    position: relative;
+    top: 20px;
+
+}
+#home>a{
+    position: relative;
+    left: 0;
+    top: 50px;
+    margin: 10px;
+}
+#home>h2{
+    font-family: "Jacques Francois Shadow", sans-serif;
+    color: #b7b4b4;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: 1px;
+}
+#home>h3{
+    font-family: "Jacques Francois Shadow", sans-serif;
+
+    color: #b7b4b4;
+    font-weight: bold;
+    position: relative;
+    top: 1px;
+}
+#home{
+    text-align: center;
+}
+
+
+
+#about{
+    background: radial-gradient( #005E9D, #002137);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px 0;
+
+}
+#about>h2{
+    text-align: center;
+    color: #00F5D4;
+    -webkit-text-stroke-color: #41526D;
+}
+#about>h3{
+    text-align: center;
+    color: #32D5E3;
+}
+#img{
+    position: absolute;
+    width: 320px;
+    height: 370px;
+    background: #67a7e2;
+    left:100px;
+    top:150px;
+    border-radius: 5%;
+    box-shadow: 20px 20px 20px #0D1B2A;
+
+}
+#p {
+    width: 320px;
+    height: 370px;
+    background: #67a7e2;
+    position: absolute;
+    right:100px;
+    top:150px;
+    border-radius: 5%;
+    box-shadow: 20px 20px 20px #0D1B2A;
+}
+#main{
+
+}
+#img>img{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 300px;
+    height: 350px;
+}
+#p>p{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 300px;
+    height: 350px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#education{
+    background: radial-gradient( #005E9D, #002137);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    position: relative;
+}
+#education>h3{
+    text-align: center;
+    color: #32D5E3;
+}
+#skills{
+    background: radial-gradient( #005E9D, #002137);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    position: relative;
+}
+#skills>h2{
+    text-align: center;
+    color: #00F5D4;
+}
+#skills>div>img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 60px;
+}
+#skills>div>progress{
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 435px;
+}
+#skills>div>p{
+    right: 90px;
+    top: -48px;
+    position: relative;
+    text-align-last: right;
+    font-size: 30px;
+    color: white;
+}
+
+#assignment{
+    background: radial-gradient( #005E9D, #002137);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 200vh;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    position: relative;
+}
+#assignment>h2{
+    text-align: center;
+    color: #00F5D4;
+}
+
+#assignment>h3{
+         text-align: center;
+         color: #32D5E3;
+
+ }
+
+#assignment>#f{
+    position: absolute;
+    width: 320px;
+    height: 370px;
+    background: #67a7e2;
+    left:50px;
+    top:150px;
+    border-radius: 5%;
+    box-shadow: 20px 20px 20px #0D1B2A;
+}
+#d{
+    width: 320px;
+    height: 370px;
+    background: #67a7e2;
+    position: absolute;
+    right:485px;
+    top:150px;
+    border-radius: 5%;
+    box-shadow: 20px 20px 20px #0D1B2A;
+}
+#y{
+    width: 320px;
+    height: 370px;
+    background: #67a7e2;
+    position: absolute;
+    right:70px;
+    top:150px;
+    border-radius: 5%;
+    box-shadow: 20px 20px 20px #0D1B2A;
+}
+#g{
+    position: absolute;
+    width: 320px;
+    height: 370px;
+    background: #67a7e2;
+    left:50px;
+    top:550px;
+    border-radius: 5%;
+    box-shadow: 20px 20px 20px #0D1B2A;
+}
+#ass5{
+    width: 320px;
+    height: 370px;
+    background: #67a7e2;
+    position: absolute;
+    right:485px;
+    top:550px;
+    border-radius: 5%;
+    box-shadow: 20px 20px 20px #0D1B2A;
+}
+#ass6{
+    width: 320px;
+    height: 370px;
+    background: #67a7e2;
+    position: absolute;
+    right:70px;
+    top:550px;
+    border-radius: 5%;
+    box-shadow: 20px 20px 20px #0D1B2A;
+}
+#assignment h4 {
+    text-align: center;
+}
+#assignment p{
+    text-align: center;
+}
+
+#assignment img{
+    width: 300px;
+    position: relative;
+    left: 12px;
+
+
+
+}
+
+
+#projects>h2{
+    text-align: center;
+    color: #32D5E3;
+}
+#projects{
+    background: linear-gradient( #005E9D, #002137);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    position: relative;
+}
+#projects img{
+    width: 300px;
+    position: relative;
+    left: 12px;
+    top: 3px;
+}
+#projects a{
+    width: 300px;
+    position: absolute;
+    left: 150px;
+    top: 20px;
+}
+#pro2{
+    position: absolute;
+    width: 320px;
+    height: 370px;
+    background: #67a7e2;
+    left:550px;
+    top:150px;
+    border-radius: 5%;
+    box-shadow: 20px 20px 20px #0D1B2A;
+}
+#projects h4{
+    text-align: center;
+}
+#gallery>h2{
+    text-align: center;
+    color: #00F5D4;
+}
+#pro1{
+    position: absolute;
+    width: 320px;
+    height: 370px;
+    background: #67a7e2;
+    left:50px;
+    top:150px;
+    border-radius: 5%;
+    box-shadow: 20px 20px 20px #0D1B2A;
+}
+#gallery{
+    background: linear-gradient( #005E9D, #002137);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+}
+#contact>h2{
+    text-align: center;
+    color: #00F5D4;
+}
+#contact{
+    background: linear-gradient( #005E9D, #002137);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+}
+#contact h3 {
+    color: #32D5E3;
+}
+
+button{
+    background: #427ea4;
+}
+#gh>#name{
+    background: #3A86FF;
+}
+#em>#email{
+    background: #3A86FF;
+}
+#sub>#subject{
+    background: #3A86FF;
+}
+#text>#message{
+    background: #3A86FF;
+}

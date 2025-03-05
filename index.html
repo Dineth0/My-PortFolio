@@ -7,11 +7,14 @@
     <meta name=description" content="welcome to my website. I'am Dineth @ IJSE" >
     <meta name="author" content="Dineth Osanka Nakandala">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css"></link>
+    <link rel="stylesheet" href="lib/normalize.css"></link>
 </head>
 <body>
+<div id="container">
 <header>
     <nav>
-        <img src="assests/images/DON.icon" alt="logo" width="50" height="50">
+        <img src="assests/images/DON.icon" alt="logo" width="60" height="60">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -22,45 +25,52 @@
         </ul>
     </nav>
 </header>
+
                                         <!--HeroSection-->
 <section id="home">
-    <img src="assests/images/Me.png" alt="Me" width="300" height="225"></img>
+
     <h1>Hello 👋🏻</h1>
     <h1>I am Dineth</h1>
-    <h3>-Full Stack Developer-</h3>
-    <h4>-Welcome to My Website-</h4>
+    <h2>-Full Stack Developer-</h2>
+    <h3>-Welcome to My Website-</h3>
 
-    <div>
-        <a href="https://github.com/Dineth0" target="_blank"><img src="assests/images/github.png" width = "30p" height = "30px" alt="Github"></a>
+
+        <a id= "git" href="https://github.com/Dineth0" target="_blank"><img src="assests/images/github.ico" width = "30p" height = "30px" alt="Github"></a>
         <a href="https://www.linkedin.com/in/dineth-nakandala-2b8aa42b4/" target="_blank"><img src="assests/images/linkedin.png" width = "30" height = "30px" alt="Linkedin"></a>
         <a href="https://www.facebook.com/dineth.nakandala" target="_blank"><img src="assests/images/facebooks.png" width ="30" height = "30" alt="Facebook"></a>
         <a href="https://www.instagram.com/dinethnakandala/" target="_blank"><img src="assests/images/instagram.png" width = "30" height="30px" alt="Instagram"></a>
         <a href="https://medium.com/@dinethnakandala10" target="_blank"><img src="assests/images/medium.png" width="30" height="30" alt="Medium"></a>
         <a href="https://x.com/DinethNakandala" target="_blank"><img src="assests/images/X.png" width=30" height="30" alt="X"></a>
-    </div>
+
 
 </section>
+</div>
                                         <!--AboutSection-->
 
 <section id="about">
                 <!--AboutSection LeftSide-->
     <h2>About Me</h2>
-    <div>
+    <h3>-Who is I am-</h3>
+    <div id="main">
+    <div id="img">
+
         <img src="assests/images/About.png" width = "250" height="300" alt="Me"></img>
+
     </div>
 
                 <!--AboutSection RightSide-->
 
-    <div>
-        <p>Hey, I am Dineth Osanka <br>Nakandala and I am 23 years<br> old. I am currently studying<br> Graduate Diploma in Software<br> Engineering in  IJSE.My effort is<br> to work as a full stack developer<br> in the IT industry in the future. I <br> interested in cording, music,<br>traveling and cricket. I always<br> try to use new features in the<br> field of IT and add them to my<br> projects.
-        </p>
+    <div id="p">
+        <p>Hey, I am Dineth Osanka <br>Nakandala and I am 23 years<br> old. I am currently studying<br> Graduate Diploma in Software<br> Engineering in  IJSE.My effort is<br> to work as a full stack developer<br> in the IT industry in the future. I <br> interested in cording, music,<br>traveling and cricket. I always<br> try to use new features in the<br> field of IT and add them to my projects.</p>
     </div>
+    </div>
+
 </section>
 
                                          <!--Education Section-->
 
-<section>
-    <h3>Education</h3>
+<section id="education">
+    <h3>-Educations-</h3>
     <div>
         <img src="assests/images/mihindu.png" width="70" height=70px" alt="Mihindu College"></img>
         <p>Mihindu Central College<br>2006-2020<br></p>
@@ -92,39 +102,39 @@
 <section id="skills">
     <h2>Skills</h2>
     <div>
-        <img src="assests/images/java.png" width="70" height=70" alt="java"></img>
-        <br><progress value="80" max="100" width="500" height="500"></progress>
-        <br><p>80%</p>
+        <img src="assests/images/java.png"  alt="java"></img>
+        <br><progress id="e" value="80" max="100" ></progress>
+        <br><br><p id="java">80%</p>
     </div>
     <br>
     <div>
         <img src="assests/images/mysql.png" width="70" height=70" alt="mysql"></img>/
         <br><progress value="85" max="100" width="500" height="50"></progress>
-        <br><p>85%</p>
+        <br><p id="mysql">85%</p>
     </div>
     <br>
     <div>
         <img src="assests/images/JavaFX.png" width="70" height=70" alt="JavaFx"></img>
         <br><progress value="80" max="100" width="500" height="200"></progress>
-        <br><p>80%</p>
+        <br><p id="fx">80%</p>
     </div>
     <br>
     <div>
         <img src="assests/images/figma.png" width="70" height=70" alt="Figma"></img>
         <br><progress value="90" max="100" width="500" height="50"></progress>
-        <br><p>90%</p>
+        <br><p id="html">90%</p>
     </div>
     <br>
     <div>
         <img src="assests/images/html.png" width="70" height=70" alt="HTML"></img>
         <br><progress value="85" max="100" width="500" height="50"></progress>
-        <br><p>85%</p>
+        <br><p id="css">85%</p>
     </div>
     <br>
     <div>
         <img src="assests/images/css.png" width="70" height=70" alt=CSS></img>
         <br><progress value="70" max="100" width="500" height="50"></progress>
-        <br><p>70%</p>
+        <br><p id="script">70%</p>
     </div>
     <br>
     <div>
@@ -136,142 +146,99 @@
 </section>
 
                                              <!--My Works Section-->
-<br>
-<section id="works">
-    <h2>My Works</h2>
+
+
+
 
     <!--Assignment Section-->
 
-    <section id="assinments">
+    <section id="assignment">
+        <h2>My Works</h2>
 
     <h3>-Assignments-</h3>
 
         <!--Assignment Section first row-->
-        <div>
-            <div>
+
+            <div id="f">
                 <h4>Assignment 01</h4>
                 <P>Designing part of this portfolio website.Create the requirement Document, Site map, Wireframe, Mockup Design</P>
                 <img src="assests/images/assigments.png" alt="assignment" height="100" width="200"></img><br>
-                <a href="https://docs.google.com/document/d/1IGDYXYQwhN34WHQDvqD3uk9dRbT5uHIS2Uz0OUETb2I/edit?usp=sharing" target="_blank">Goal Doc</a>
-                <a href="https://www.gloomaps.com/VEE9NocMbR" target="_blank">Site Map</a>
-                <a href="https://drive.google.com/file/d/1ti9hi4azaHk7BoGw3av9_koGLn8Sq0AN/view?usp=sharing"target="_blank">Wireframe</a>
+                <a href="https://docs.google.com/document/d/1IGDYXYQwhN34WHQDvqD3uk9dRbT5uHIS2Uz0OUETb2I/edit?usp=sharing" target="_blank">Goal Doc</a><br>
+                <a href="https://www.gloomaps.com/VEE9NocMbR" target="_blank">Site Map</a><br>
+                <a href="https://drive.google.com/file/d/1ti9hi4azaHk7BoGw3av9_koGLn8Sq0AN/view?usp=sharing"target="_blank">Wireframe</a><br>
                 <a href="https://www.figma.com/design/NOyGhq5qmjdd0OekXvu7NP/My-Portfolio-Mockups?node-id=0-1&t=YArO8rcGFQWbV8X0-1" target="_blank">Mockups</a>
             </div>
 
-            <div>
+            <div id="d">
                 <h4>Assignment 02</h4>
                 <P>Build the structure of this portfolio website using html.</P>
                 <img src="assests/images/assigments.png" alt="assignment" height="100" width="200"></img><br>
                 <a href="https://github.com/Dineth0/My-PortFolio">git</a>
             </div>
 
-            <div>
-                <h4>Assignment 03</h4>
-                <P></P>
-                <img src="" alt=""></img><br>
-                <a href=""></a>
-            </div>
+        <div id="y">
+            <h4>Assignment 03</h4>
+            <P></P>
+            <img src="assests/images/assigments.png" alt="assignment" height="100" width="200"></img><br>
+            <a href=""></a>
         </div>
 
-        <!--Assignment Section second row-->
-        <div>
-            <div>
-                <h4>Assignment 04</h4>
-                <P></P>
-                <img src="" alt=""></img><br>
-                <a href=""></a>
-            </div>
+        <br><br>
 
-            <div>
-                <h4>Assignment 05</h4>
-                <P></P>
-                <img src="" alt=""></img><br>
-                <a href=""></a>
-            </div>
+        <diV id="g">
+            <h4>Assignment 04</h4>
+            <P></P>
+            <img src="assests/images/assigments.png" alt="assignment" height="100" width="200">
+            <a href=""></a>
+        </diV>
 
-            <div>
-                <h4>Assignment 06</h4>
-                <P></P>
-                <img src="" alt=""></img><br>
-                <a href=""></a>
-            </div>
+        <div id="ass5">
+            <h4>Assignment 05</h4>
+            <P></P>
+            <img src="assests/images/assigments.png" alt="assignment" height="100" width="200">
+            <a href=""></a>
         </div>
-        <!--Assignment Section third row-->
-        <div>
-            <div>
-                <h4>Assignment 07</h4>
-                <P></P>
-                <img src="" alt=""></img><br>
-                <a href=""></a>
-            </div>
 
-            <div>
-                <h4>Assignment 08</h4>
-                <P></P>
-                <img src="" alt=""></img><br>
-                <a href=""></a>
-            </div>
-
-            <div>
-                <h4>Assignment 09</h4>
-                <P></P>
-                <img src="" alt=""></img><br>
-                <a href=""></a>
-            </div>
+        <div id="ass6">
+            <h4>Assignment 06</h4>
+            <P></P>
+            <img src="assests/images/assigments.png" alt="assignment" height="100" width="200">
+            <a href=""></a>
         </div>
-        <!--Assignment Section fourth row-->
-        <div>
-            <div>
-                <h4>Assignment 10</h4>
-                <P></P>
-                <img src="" alt=""></img><br>
-                <a href=""></a>
-            </div>
+</section>
 
-            <div>
-                <h4>Assignment 11</h4>
-                <P></P>
-                <img src="" alt=""></img><br>
-                <a href=""></a>
-            </div>
-        </div>
-    </section>
 
-    <!--project Section-->
+<!--project Section-->
     <section id="projects">
         <h2>-Project-</h2>
 
         <!--project Section left side-->
 
-        <div>
-         <figcaption>
-
-             TIK TAC TEO game
-             <a href="https://github.com/Dineth0/tictacteo_game">Git</a>
-
-         </figcaption>
-            <figure>
+        <div id="pro1">
+             <h4>TIK TAC TEO game</h4>
+            <span><a href="https://github.com/Dineth0/tictacteo_game">Git</a></span>
                 <img src="assests/images/tiktakteo.png" width="300" height="300">
-            </figure>
+
         </div>
+
 
         <!--project Section right side-->
 
-        <div>
-        <figcaption>
-            Labor Management System
+        <div id="pro2">
+
+            <h4>Labor Management System</h4>
             <a href="https://github.com/Dineth0/Final-Project">Git</a>
-        </figcaption>
-            <figure>
+
+
                 <img src="assests/images/lms.png" width="300" height="200"></img>
-            </figure>
+
         </div>
 
     </section>
 
-</section>
 
-<br>
+
+
 
 <section id="gallery">
     <h2>My Gallery</h2>
@@ -342,28 +309,28 @@
 
     <br>
             <!--Contact Section right side-->
-    <section>
+    <section id="hireme">
         <h3>-Hire Me-</h3>
 
-        <div>
-            <input type="text" id="name" placeholder="Enter your Name" name="enter name"></input>
+        <div id="gh">
+            <input type="text" id="name" class="style" placeholder="Enter your Name" name="enter name"></input>
         </div>
 
         <br>
 
-        <div>
-            <input type="text" id="email" placeholder="Enter your Email" name="enter email"></input>
+        <div id="em">
+            <input type="text" id="email" class="style" placeholder="Enter your Email" name="enter email"></input>
         </div>
 
         <br>
 
-        <div>
-            <input type="text" id="subject" placeholder="Subject" name="enter subject"></input>
+        <div id="sub">
+            <input type="text" id="subject" class="style" placeholder="Subject" name="enter subject"></input>
         </div>
 
         <br>
 
-        <div>
+        <div id="text">
             <textarea id="message" placeholder="Enter your Message" rows="10" cols="50" name="enter message"></textarea>
         </div>
 
