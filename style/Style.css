@@ -116,7 +116,7 @@ nav ul li a:hover {
     position: relative;
     width: 100vw;
     height: 100vh;
-    padding: 10px ;
+    padding: 10px 0;
 
 }
 #about>h2{
@@ -193,6 +193,7 @@ nav ul li a:hover {
     height: 100%;
     padding: 10px 0;
     position: relative;
+    margin-bottom: -20px;
 }
 #skills>h2{
     text-align: center;
@@ -225,7 +226,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     width: 100vw;
-    height: 200vh;
+    height: 225vh;
     top: 0;
     left: 0;
     padding: 10px 0;
@@ -252,56 +253,7 @@ nav ul li a:hover {
     border-radius: 5%;
     box-shadow: 20px 20px 20px #0D1B2A;
 }
-#d{
-    width: 320px;
-    height: 370px;
-    background: #67a7e2;
-    position: absolute;
-    right:485px;
-    top:150px;
-    border-radius: 5%;
-    box-shadow: 20px 20px 20px #0D1B2A;
-}
-#y{
-    width: 320px;
-    height: 370px;
-    background: #67a7e2;
-    position: absolute;
-    right:70px;
-    top:150px;
-    border-radius: 5%;
-    box-shadow: 20px 20px 20px #0D1B2A;
-}
-#g{
-    position: absolute;
-    width: 320px;
-    height: 370px;
-    background: #67a7e2;
-    left:50px;
-    top:550px;
-    border-radius: 5%;
-    box-shadow: 20px 20px 20px #0D1B2A;
-}
-#ass5{
-    width: 320px;
-    height: 370px;
-    background: #67a7e2;
-    position: absolute;
-    right:485px;
-    top:550px;
-    border-radius: 5%;
-    box-shadow: 20px 20px 20px #0D1B2A;
-}
-#ass6{
-    width: 320px;
-    height: 370px;
-    background: #67a7e2;
-    position: absolute;
-    right:70px;
-    top:550px;
-    border-radius: 5%;
-    box-shadow: 20px 20px 20px #0D1B2A;
-}
+
 #assignment h4 {
     text-align: center;
 }
@@ -328,12 +280,13 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     padding: 10px 0;
     position: relative;
+    margin-bottom: -20px;
 }
 #projects img{
     width: 300px;
@@ -376,15 +329,16 @@ nav ul li a:hover {
 }
 #gallery{
     background: linear-gradient( #005E9D, #002137);
-    height: 100vh;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100%;
+   height: 100%;
     top: 0;
     left: 0;
     padding: 10px 0;
+    position: relative;
 }
 #contact>h2{
     text-align: center;
@@ -392,7 +346,7 @@ nav ul li a:hover {
 }
 #contact{
     background: linear-gradient( #005E9D, #002137);
-    height: 100vh;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
