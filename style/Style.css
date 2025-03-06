@@ -153,3 +153,14 @@ nav ul li a:hover {
     text-align: center;
     color: #32D5E3;
 }
+#skills{
+    background: radial-gradient( #005E9D, #002137);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    position: relative;
+    margin-bottom: -20px;
+}
