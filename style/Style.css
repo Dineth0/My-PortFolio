@@ -93,3 +93,28 @@ nav ul li a:hover {
 #home{
     text-align: center;
 }
+#about{
+    background: radial-gradient( #005E9D, #002137);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 0;
+
+}
+#about div{
+    background-color: #3A86FF;
+    border: 3px solid #00ff77;
+    margin:10px;
+    height: 380px;
+    width: 310px;
+    position: relative;
+    left: 130px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 30px #e0c5c5;
+
+}
