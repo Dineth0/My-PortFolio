@@ -118,3 +118,24 @@ nav ul li a:hover {
     box-shadow: 3px 3px 30px #e0c5c5;
 
 }
+#about>h2{
+    text-align: center;
+    grid-column: span 2;
+    color: #00F5D4;
+    -webkit-text-stroke-color: #41526D;
+}
+#about div p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+#about img{
+    position: relative;
+    width: 275px;
+    height: 350px;
+    background: #67a7e2;
+    left:16px;
+    top:13px;
+    border-radius: 10%;
+}
