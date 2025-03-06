@@ -295,22 +295,29 @@ nav ul li a:hover {
 #projects{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
 }
 #projects>div{
     background-color: #3A86FF;
     border: 1px solid #1d1313;
     margin: 13px;
-    height: 350px;
+    height: 370px;
     aspect-ratio: 1/1;
+    position: relative;
+    left: 100px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 30px #e0c5c5;
 }
 #projects>h2{
     grid-column: span 2;
 }
 #projects img{
-    width: 300px;
+    width: 100%;
+    height: 310px;
     position: relative;
-    left: 12px;
-    top: 3px;
+    left: 0;
+    top: 0;
+    border-radius: 10%;
 }
 
 #projects h4{
