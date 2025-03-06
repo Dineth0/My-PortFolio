@@ -51,3 +51,38 @@ nav ul li a:hover {
     opacity: 0.7;
     z-index: -1;
 }
+#home>h1{
+    font-family: "Kristen ITC", sans-serif;
+    color: aliceblue;
+    font-size: 90px;
+    text-align: center;
+    text-shadow: 10px 10px 20px #6d93e0;
+    position: relative;
+    top: 20px;
+
+}
+#home>a{
+    position: relative;
+    left: 0;
+    top: 50px;
+    margin: 10px;
+}
+#home>h2{
+    font-family: "Jacques Francois Shadow", sans-serif;
+    color: #b7b4b4;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: 1px;
+}
+#home>h3{
+    font-family: "Jacques Francois Shadow", sans-serif;
+
+    color: #b7b4b4;
+    font-weight: bold;
+    position: relative;
+    top: 1px;
+}
+#home{
+    text-align: center;
+}
