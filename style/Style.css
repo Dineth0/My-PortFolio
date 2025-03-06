@@ -336,3 +336,38 @@ nav ul li a:hover {
     padding: 10px 0;
     position: relative;
 }
+#contact>h2{
+    text-align: center;
+    color: #00F5D4;
+}
+#contact{
+    background: linear-gradient( #005E9D, #002137);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+}
+#contact h3 {
+    color: #32D5E3;
+}
+
+button{
+    background: #427ea4;
+}
+#gh>#name{
+    background: #3A86FF;
+}
+#em>#email{
+    background: #3A86FF;
+}
+#sub>#subject{
+    background: #3A86FF;
+}
+#text>#message{
+    background: #3A86FF;
+}
