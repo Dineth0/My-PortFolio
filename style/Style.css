@@ -164,3 +164,27 @@ nav ul li a:hover {
     position: relative;
     margin-bottom: -20px;
 }
+#skills>h2{
+    text-align: center;
+    color: #00F5D4;
+}
+#skills>div>img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 60px;
+}
+#skills>div>progress{
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 435px;
+}
+#skills>div>p{
+    right: 90px;
+    top: -48px;
+    position: relative;
+    text-align-last: right;
+    font-size: 30px;
+    color: white;
+}
