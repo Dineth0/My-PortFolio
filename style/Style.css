@@ -188,3 +188,33 @@ nav ul li a:hover {
     font-size: 30px;
     color: white;
 }
+#assinments{
+    background: radial-gradient( #005E9D, #002137);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 210vh;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    position: relative;
+
+}
+#assinments{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: #00F5D4;
+    position: relative;
+}
+#assinments div{
+    background-color: #cf7f6b;
+    border: 1px solid #1d1313;
+    margin: 13px;
+    height: 250px;
+    aspect-ratio: 1/1;
+    position: relative;
+    left: 60px;
+    border-radius: 10%;
+}
