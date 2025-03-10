@@ -101,41 +101,54 @@ nav ul li a:hover {
     text-align: center;
 }
 #about{
-    background: radial-gradient( #005E9D, #002137);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient( #005E9D, #002137);
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     width: 100%;
     min-height: 100vh;
     padding: 10px 0;
 
 }
-#about div{
+
+#about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+#imgDiv{
     background-color: #3A86FF;
     border: 3px solid #00ff77;
     margin:10px;
     height: 380px;
     width: 310px;
     position: relative;
-    left: 130px;
+    left: 30px;
+    top: 30px;
     border-radius: 10%;
     box-shadow: 3px 3px 30px #e0c5c5;
-
 }
-#about>h2{
+#about h1{
     text-align: center;
-    grid-column: span 2;
     color: #00F5D4;
     -webkit-text-stroke-color: #41526D;
 }
-#about div p{
-    text-align: center;
-    font-weight: bold;
-    font-size: 22px;
+#about .about-content{
+    width: 400px;
+    height: 500px;
 
+    margin:10px
+}
+#about #pDiv{
+    background-color: #3A86FF;
+    border: 3px solid #00ff77;
+    margin:10px;
+    height: 380px;
+    width: 310px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 30px #e0c5c5;
 }
 #about img{
     position: relative;
@@ -145,6 +158,11 @@ nav ul li a:hover {
     left:16px;
     top:13px;
     border-radius: 10%;
+}
+#about p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
 }
 #education{
     background: radial-gradient( #005E9D, #002137);
@@ -201,79 +219,60 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 210vh;
+    height: auto;
     top: 0;
     left: 0;
     padding: 10px 0;
     position: relative;
 
 }
-#assinments{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    background-color: #00F5D4;
-    position: relative;
+#works-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
 }
-#assinments div{
-    background-color: #cf7f6b;
-    border: 1px solid #1d1313;
-    margin: 13px;
+
+#works-container div {
+    width: calc(25% - 15px);
+    height: 300px;
+
+}
+#works-container .r{
+    background-color: red;
+    width: 250px;
     height: 250px;
-    aspect-ratio: 1/1;
-    position: relative;
-    left: 60px;
+    margin: auto;
+    position: relative; /* Overlay ekata relative reference ekak denna */
     border-radius: 10%;
+    overflow: hidden;
 }
-#assinments>div>img{
+.AssignmentImg{
     width: 100%;
     height: 100%;
     position: relative;
     border-radius: 10%;
     z-index: 0;
 }
-#assinments > div::after {
+.r::after {
     content: '';
     position: absolute;
+    top: 30px;
     left: 0;
-    top: 50px;
-    height: 200px;
     width: 100%;
+    height: 100px;
     background: linear-gradient(to bottom right, rgba(68, 245, 8, 0.5), rgba(4, 232, 253, 0.8));
-    opacity: 0.4;
-    z-index: 1;
+    opacity: 0.5;
     border-radius: 10%;
 }
-#assinments > div p {
-    position: absolute;
-    top:70px;
-    left:10px;
-    color: #131212;
-    z-index: 2;
-    text-align: center;
-    font-weight: bold;
-}
-#assinments>div>h4{
-
-    position: absolute;
-    top: -14px;
-    left: 75px;
-}
-#assinments>div>h4{
-
-    text-align: center;
-}
-#assinments>h2{
+#assinments h1{
     text-align: center;
     color: #00F5D4;
-    grid-column: span 3;
 }
-
-#assinments>h3{
+#assinments h2{
     text-align: center;
     color: #32D5E3;
-    grid-column: span 3;
-
 }
 #projects>h2{
     text-align: center;
@@ -285,44 +284,61 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
     top: 0;
     left: 0;
     padding: 10px 0;
     position: relative;
     margin-bottom: -20px;
 }
-#projects{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 
+#project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
 }
-#projects>div{
+#projects .project-content{
+    width: 500px;
+    height: 500px;
+
+    margin:10px
+}
+#projects #leftDiv{
     background-color: #3A86FF;
-    border: 1px solid #1d1313;
-    margin: 13px;
-    height: 370px;
-    aspect-ratio: 1/1;
+
+    margin:10px;
+    height: 350px;
+    width: 350px;
     position: relative;
-    left: 100px;
+    left: 20px;
+    top: 0;
     border-radius: 10%;
     box-shadow: 3px 3px 30px #e0c5c5;
 }
-#projects>h2{
-    grid-column: span 2;
-}
-#projects img{
-    width: 100%;
-    height: 310px;
+#projects #rightDiv{
+    background-color: #3A86FF;
+
+    margin:10px;
+    height: 350px;
+    width: 350px;
     position: relative;
-    left: 0;
-    top: 0;
-
+    left: 50px;
+    top: 0px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 30px #e0c5c5;
+}
+#leftDiv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+#rightDiv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
 }
 
-#projects h4{
-    text-align: center;
-}
 #gallery>h2{
     text-align: center;
     color: #00F5D4;
@@ -391,4 +407,34 @@ button{
 }
 #text>#message{
     background: #3A86FF;
+}
+@media all and (max-width: 780px) {
+    #about-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+@media all and (max-width: 880px) {
+    #project-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+@media all and (max-width: 1000px){
+    #works-container{
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+        justify-content: center;
+        align-items: center;
+    }
+    #works-container div{
+        width: calc(50% - 10px);
+        height: auto;
+        margin: 10px;
+    }
+
 }
