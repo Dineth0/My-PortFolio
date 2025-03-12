@@ -178,6 +178,95 @@ nav ul li a:hover {
     text-align: center;
     color: #32D5E3;
 }
+.Education-Container{
+    width: 80%;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+.Education-Container:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 8px;
+    height: 110%;
+    background-color: #a64fc5;
+    z-index: 1;
+}
+.timeLine{
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+    gap:10px;
+}
+.EduImg{
+    width: 50px;
+
+}
+.LeftImg{
+    position: absolute;
+    right: 30px;
+    top:20px;
+}
+.RightImg{
+    position: absolute;
+    left: 30px;
+    top:20px;
+}
+.timeLine-Left{
+    float: left;
+    direction: rtl;
+
+}
+.timeLine-Right{
+    float: right;
+
+}
+.Dot{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid darkslateblue;
+    background: #ffeb14;
+    margin-top: 30px;
+    z-index: 9999;
+
+}
+.Education-content{
+
+    width: 100%;
+    padding: 0 15px;
+
+
+    /*border-radius: 15px;
+    border: 2px solid #00ff77;
+    box-shadow: 3px 3px 30px #e0c5c5;*/
+}
+.content-p{
+    width: 100%;
+    background: #3A86FF;
+    border-radius: 15px;
+    border: 2px solid #00ff77;
+    box-shadow: 3px 3px 30px #e0c5c5;
+    position: relative;
+}
+.content-p h3,h4{
+    text-align: center;
+}
+
+
 #skills{
     background: radial-gradient( #005E9D, #002137);
     background-repeat: no-repeat;
@@ -244,7 +333,7 @@ nav ul li a:hover {
     width: 250px;
     height: 250px;
     margin: auto;
-    position: relative; /* Overlay ekata relative reference ekak denna */
+    position: relative;
     border-radius: 10%;
     overflow: hidden;
 }
@@ -351,43 +440,94 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 150vh;
+    height: auto;
     top: 0;
     left: 0;
     padding: 10px 0;
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
 }
 
-#gallery div{
-    background-color: #3A86FF;
-    border: 1px solid #1d1313;
-    margin: 13px;
-    height: 300px;
-    aspect-ratio: 1/1;
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.gallery-container>.gallery-content{
+    width: 400px;
+    height: 400px;
+    background-color: #dd6464;
+}
+.gallery-item {
+    width: 350px;
+    height: 350px;
+    background-color: red;
     position: relative;
-    left: 50px;
+    left: 6px;
+    top: 20px;
 }
-#gallery img{
-    height: 100%;
+.gallery-item img{
     width: 100%;
-}
-#contact>h2{
-    text-align: center;
-    color: #00F5D4;
+    height: 100%;
 }
 #contact{
     background: linear-gradient( #005E9D, #002137);
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: auto;
     top: 0;
     left: 0;
     padding: 10px 0;
+    position: relative;
+}
+#contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+
+}
+#contact .contact-content{
+    width: 600px;
+    height: 500px;
+    background-color: rgba(161, 69, 69, 0.5);
+    margin:10px
+}
+#contact .contact-content .contact-info{
+    background-color: #3A86FF;
+
+    margin:10px;
+    height: 450px;
+    width: 500px;
+}
+#contact .contact-content #LeftContact{
+    position: relative;
+    left: 40px;
+}
+#contact h3{
+    text-align: center;
+}
+#contact p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact #links{
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+#contact #links a{
+    margin: 10px;
+}
+#contact img {
+    width: 30px;
+    height: 30px;
 }
 #contact h3 {
     color: #32D5E3;
@@ -436,5 +576,89 @@ button{
         height: auto;
         margin: 10px;
     }
+}
+@media all and (max-width: 1000px) {
+    #contact-container {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact-container div {
+        width: calc(50% - 10px);
+        height: auto;
+        margin: 10px;
+    }
+    .contact-content {
+        width: 90%;
+    }
+    #contact #links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    #contact p {
+        text-align: center;
+    }
+}
+@media all and (max-width: 1080px) {
+    .gallery-container {
+        justify-content: center;
+    }
+    .gallery-content{
+        width: calc(50% - 20px);
+    }
+}
+@media all and (max-width: 830px) {
+    .gallery-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .gallery-content {
+        width: 100%;
+    }
+}
+@media all and (max-width: 768px) {
+    .Education-Container:before {
+        left: 8px;
+        width: 2px;
+    }
+    .timeline{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .timeLine-Right {
+        float: none;
+    }
+
+    .timeLine-Left {
+        float: none;
+        direction: ltr;
+    }
+    .content-p{
+        margin: 20px;
+        width:200px;
+    }
+    .content-p h3,h4{
+        font-size: 10px;
+    }
+    .EduImg{
+        width: 25px;
+    }
+    .LeftImg{
+        position: absolute;
+        left: 10px;
+        top: 13px;
+    }
+    .RightImg{
+        position: absolute;
+        right: 10px;
+        top: 13px;
+    }
+
+
 
 }
