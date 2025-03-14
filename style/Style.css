@@ -88,10 +88,14 @@ nav ul li a:hover {
     top: 20px;
 
 }
+#home #dineth{
+    position: relative;
+    bottom:20px;
+}
 #home a{
     position: relative;
     left: 0;
-    top: 50px;
+    top: 30px;
     margin: 10px;
 }
 #home>h2{
@@ -649,12 +653,20 @@ footer div{
     font-family: 'Matemasie', sans-serif;
     text-align: center;
 }
-@media all and (max-width: 550px) {
+@media all and (max-width: 700px) {
     header button {
         display: block;
+        position: fixed;
+
     }
 
     header > nav>ul {
+        display: none;
+    }
+    header{
+        border: none;
+    }
+    header img{
         display: none;
     }
 }
@@ -662,6 +674,22 @@ footer div{
 @media all and (max-width: 550px){
     #home h1{
         font-size: 70px;
+    }
+}
+@media all and (max-width: 720px){
+    #home h1{
+        font-size: 70px;
+    }
+}
+@media all and (max-width: 350px){
+    #home h1{
+        font-size: 50px;
+    }
+    #home a{
+        margin: 5px;
+    }
+    #home h2, h3{
+        font-size: 15px;
     }
 }
 @media all and (max-width: 450px){
@@ -771,6 +799,26 @@ footer div{
     #contact img{
         width: 25px;
         height: 25px;
+    }
+}
+@media all and (max-width: 400px) {
+    #headP{
+        font-size: 13px;
+        text-align: left;
+        position: relative;
+        right: 79px;
+    }
+    #contact h3{
+        position: relative;
+        right: 79px;
+    }
+    #links a{
+        position: relative;
+        right: 50px;
+    }
+    #RightContact input, textarea{
+        position: relative;
+        right: 30px;
     }
 }
 @media all and (max-width: 1080px) {
