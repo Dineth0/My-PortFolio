@@ -532,34 +532,32 @@ nav ul li a:hover {
 #contact-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap:20px;
 
 }
 #contact .contact-content{
-    width: 600px;
+    width: 420px;
     height: 500px;
     background-color: rgba(161, 69, 69, 0.5);
     margin:10px
 }
 #contact .contact-content .contact-info{
     background-color: #3A86FF;
-
+    align-items: center;
     margin:10px;
     height: 450px;
-    width: 500px;
+    width: 400px;
 }
 #contact .contact-content #LeftContact{
     position: relative;
-    left: 40px;
+    right: 10px;
 }
 #contact h3{
     text-align: center;
 }
 #contact p{
-    text-align: center;
-    display: flex;
-    justify-content: center;
+
     align-items: center;
 }
 #contact #links{
@@ -573,6 +571,8 @@ nav ul li a:hover {
 #contact img {
     width: 30px;
     height: 30px;
+    position: relative;
+    top: 1px;
 }
 #contact h3 {
     color: #32D5E3;
@@ -580,6 +580,11 @@ nav ul li a:hover {
 
 button{
     background: #427ea4;
+}
+.contact-item{
+    display: inline-flex;
+    align-items: center;
+    gap:20px;
 }
 #gh>#name{
     background: #3A86FF;
@@ -602,6 +607,17 @@ button{
         display: none;
     }
 }*/
+
+@media all and (max-width: 550px){
+    #home h1{
+        font-size: 70px;
+    }
+}
+@media all and (max-width: 450px){
+    #home h1{
+        font-size: 60px;
+    }
+}
 @media all and (max-width: 780px) {
     #about-container{
         display: flex;
@@ -672,10 +688,18 @@ button{
         display: flex;
         justify-content: center;
         gap: 10px;
+        position: relative;
+        left: 70px;
     }
-    #contact p {
+    #headP{
         text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+
     }
+
+
 }
 @media all and (max-width: 1080px) {
     .gallery-container {
