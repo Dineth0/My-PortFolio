@@ -1,16 +1,17 @@
 
-body{
+html, body{
     overflow-x: hidden;
-    position: relative;
     margin: 0;
-    padding: 0;
-    width: 100%;
 
+
+}
+*{
+    box-sizing: border-box;
 }
 
 header{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 70px;
     top:0;
     left: 0;
@@ -23,12 +24,13 @@ header{
     border-radius: 100px;
 
 
+
 }
 header button{
     display: none;
     position: relative;
     top: 10px;
-    right: 10px;
+    right: 150px;
 }
 header>nav>img{
     position:relative ;
@@ -59,6 +61,7 @@ nav ul li a:hover {
 }
 #home {
     height: 100vh;
+    width: 100vw;
     background: url("/assests/images/desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,9 +123,9 @@ nav ul li a:hover {
 #about{
     background: linear-gradient( #005E9D, #002137);
     position: relative;
-    width: 100%;
     min-height: 100vh;
     padding: 10px 0;
+    width: 100vw;
 
 }
 
@@ -179,14 +182,14 @@ nav ul li a:hover {
 #about p {
     text-align: center;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 21px;
 }
 #education{
     background: radial-gradient( #005E9D, #002137);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     padding: 10px 0;
     position: relative;
@@ -271,6 +274,25 @@ nav ul li a:hover {
     border: 2px solid #00ff77;
     box-shadow: 3px 3px 30px #e0c5c5;*/
 }
+#education #aqui{
+    width: 70px;
+    height: 70px;
+}
+#education #open{
+    width: 70px;
+    height: 70px;
+}
+#education #htbc{
+    width: 70px;
+    height: 70px;
+}
+#education #ijse{
+    width: 70px;
+    height: 70px;
+}#education #mihindu{
+     width: 70px;
+     height: 70px;
+ }
 .content-p{
     width: 100%;
     background: #3A86FF;
@@ -289,7 +311,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     height: auto;
     padding: 10px 0;
     top: 0;
@@ -350,7 +372,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     height: auto;
     top: 0;
     left: 0;
@@ -439,7 +461,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     height: auto;
     top: 0;
     left: 0;
@@ -506,7 +528,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     height: auto;
     top: 0;
     left: 0;
@@ -548,7 +570,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     height: auto;
     top: 0;
     left: 0;
@@ -657,7 +679,11 @@ footer div{
     header button {
         display: block;
         position: fixed;
-
+        right: 20px;
+        top:15px;
+    }
+    header{
+        max-width: 100vw;
     }
 
     header > nav>ul {
