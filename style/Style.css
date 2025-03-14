@@ -24,12 +24,12 @@ header{
 
 
 }
-/*header button{
+header button{
     display: none;
     position: relative;
     top: 10px;
     right: 10px;
-}*/
+}
 header>nav>img{
     position:relative ;
     top:0;
@@ -88,7 +88,7 @@ nav ul li a:hover {
     top: 20px;
 
 }
-#home>a{
+#home a{
     position: relative;
     left: 0;
     top: 50px;
@@ -205,23 +205,23 @@ nav ul li a:hover {
     left: 50%;
     margin-left: -1px;
     width: 8px;
-    height: 110%;
-    background-color: #a64fc5;
+    height: 100%;
+    background-color: #0ad9d2;
     z-index: 1;
 }
 .timeLine{
-    width: -webkit-calc(50% + 8px);
-    width: -moz-calc(50% + 8px);
     width: calc(50% + 8px);
+    /*width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
-    display: flex;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -moz-box-pack: justify;
+    clear: both;*/
     justify-content: space-between;
-    clear: both;
+    display: flex;
     gap:10px;
 }
 .EduImg{
@@ -251,8 +251,8 @@ nav ul li a:hover {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 2px solid darkslateblue;
-    background: #ffeb14;
+    border: 2px solid #0e278c;
+    background: #35d60d;
     margin-top: 30px;
     z-index: 9999;
 
@@ -377,6 +377,7 @@ nav ul li a:hover {
     position: relative;
     border-radius: 10%;
     overflow: hidden;
+
 }
 .AssignmentImg{
     width: 100%;
@@ -384,17 +385,38 @@ nav ul li a:hover {
     position: relative;
     border-radius: 10%;
     z-index: 0;
+    display: block;
 }
 .r::after {
     content: '';
     position: absolute;
-    top: 30px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+   height: 100%;
     background: linear-gradient(to bottom right, rgba(68, 245, 8, 0.5), rgba(4, 232, 253, 0.8));
     opacity: 0.5;
     border-radius: 10%;
+    z-index: 1;
+}
+.r p{
+    position: absolute;
+    bottom: 10px;
+    left:25px;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    width: 80%;
+}
+.r h4{
+    position: absolute;
+    bottom: 170px;
+    left:25px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    z-index: 2;
+    width: 80%;
 }
 #assinments h1{
     text-align: center;
@@ -493,20 +515,20 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .gallery-container>.gallery-content{
     width: 350px;
     height: 350px;
-    background-color: #dd6464;
+
 }
 .gallery-item {
     width: 300px;
     height: 300px;
     background-color: red;
     position: relative;
-    left: 6px;
+    left: 25px;
     top: 20px;
 }
 .gallery-item img{
@@ -532,26 +554,30 @@ nav ul li a:hover {
 #contact-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap:20px;
 
 }
 #contact .contact-content{
-    width: 420px;
+    width: 550px;
     height: 500px;
-    background-color: rgba(161, 69, 69, 0.5);
+    /*background-color: rgba(161, 69, 69, 0.5);*/
     margin:10px
 }
 #contact .contact-content .contact-info{
-    background-color: #3A86FF;
+    /*background-color: #3A86FF;*/
     align-items: center;
     margin:10px;
     height: 450px;
-    width: 400px;
+    width: 500px;
 }
 #contact .contact-content #LeftContact{
     position: relative;
-    right: 10px;
+    left: 14px;
+}
+#contact .contact-content #RightContact{
+    position: relative;
+    left: 14px;
 }
 #contact h3{
     text-align: center;
@@ -559,6 +585,13 @@ nav ul li a:hover {
 #contact p{
 
     align-items: center;
+    color: #ffffff;
+}
+.contact-info span {
+    color: #ffffff;
+}
+.contact-info span a{
+    color: #ffffff;
 }
 #contact #links{
     position: relative;
@@ -577,7 +610,10 @@ nav ul li a:hover {
 #contact h3 {
     color: #32D5E3;
 }
-
+#contact h1 {
+    color: #00F5D4;
+    text-align: center;
+}
 button{
     background: #427ea4;
 }
@@ -598,7 +634,22 @@ button{
 #text>#message{
     background: #3A86FF;
 }
-/*@media all and (max-width: 550px) {
+#footer{
+    background-color: #2976a6;
+    text-align: center;
+    padding: 10px;
+    margin-top: -14px;
+}
+footer img{
+    position: relative;
+    top:15px;
+}
+footer div{
+    color: white;
+    font-family: 'Matemasie', sans-serif;
+    text-align: center;
+}
+@media all and (max-width: 550px) {
     header button {
         display: block;
     }
@@ -606,7 +657,7 @@ button{
     header > nav>ul {
         display: none;
     }
-}*/
+}
 
 @media all and (max-width: 550px){
     #home h1{
@@ -666,7 +717,7 @@ button{
         right:20px;
     }
 }
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1100px) {
     #contact-container {
         flex-direction: column;
         display: flex;
@@ -698,8 +749,29 @@ button{
         width: 80%;
 
     }
+    .contact-info #LeftContact{
+        position: absolute;
+        left: 100px;
+    }
 
+}
+@media all and (max-width: 500px) {
+    #headP{
+        font-size: 13px;
+        text-align: left;
+        position: relative;
+        right: 25px;
+    }
+    .contact-info #LeftContact{
+        width: 300px;
+        height: auto;
+        padding: 10px;
+    }
 
+    #contact img{
+        width: 25px;
+        height: 25px;
+    }
 }
 @media all and (max-width: 1080px) {
     .gallery-container {
