@@ -2,8 +2,6 @@
 html, body{
     overflow-x: hidden;
     margin: 0;
-
-
 }
 *{
     box-sizing: border-box;
@@ -121,8 +119,7 @@ nav ul li a:hover {
     text-align: center;
 }
 #about{
-    background: linear-gradient( #005E9D, #002137);
-    position: relative;
+    background: radial-gradient( #005E9D, #002137);    position: relative;
     min-height: 100vh;
     padding: 10px 0;
     width: 100vw;
@@ -183,6 +180,7 @@ nav ul li a:hover {
     text-align: center;
     font-weight: bold;
     font-size: 21px;
+    color: white;
 }
 #education{
     background: radial-gradient( #005E9D, #002137);
@@ -194,6 +192,7 @@ nav ul li a:hover {
     padding: 10px 0;
     position: relative;
 }
+
 #education>h3{
     text-align: center;
     color: #32D5E3;
@@ -204,6 +203,7 @@ nav ul li a:hover {
     margin: 50px auto;
     position: relative;
     overflow: hidden;
+
 }
 .Education-Container:before{
     content: '';
@@ -231,19 +231,37 @@ nav ul li a:hover {
     display: flex;
     gap:10px;
 }
-.EduImg{
-    width: 50px;
-
+#education #aqui{
+    width: 90px;
+    height: auto;
 }
+#education #open{
+    width: 90px;
+    height: 90px;
+}
+#education #htbc{
+    width: 90px;
+    height: 90px;
+}
+#education #ijse{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 30px;
+    top:-20px;
+}#education #mihindu{
+     width: 70px;
+     height: 70px;
+ }
 .LeftImg{
     position: absolute;
     right: 30px;
-    top:20px;
+    top:10px;
 }
 .RightImg{
     position: absolute;
-    left: 30px;
-    top:20px;
+    left: 40px;
+    top:5px;
 }
 .timeLine-Left{
     float: left;
@@ -268,31 +286,17 @@ nav ul li a:hover {
 
     width: 100%;
     padding: 0 15px;
-
+    transition: transform 2000ms ease-out;
 
     /*border-radius: 15px;
     border: 2px solid #00ff77;
     box-shadow: 3px 3px 30px #e0c5c5;*/
 }
-#education #aqui{
-    width: 70px;
-    height: 70px;
+.Education-content:hover{
+    transform: scale(1.15);
+
 }
-#education #open{
-    width: 70px;
-    height: 70px;
-}
-#education #htbc{
-    width: 70px;
-    height: 70px;
-}
-#education #ijse{
-    width: 70px;
-    height: 70px;
-}#education #mihindu{
-     width: 70px;
-     height: 70px;
- }
+
 .content-p{
     width: 100%;
     background: #3A86FF;
@@ -393,7 +397,8 @@ nav ul li a:hover {
 #works-container div {
     width: calc(25% - 15px);
     height: 300px;
-
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 #works-container .r{
     background-color: red;
@@ -403,7 +408,11 @@ nav ul li a:hover {
     position: relative;
     border-radius: 10%;
     overflow: hidden;
+    transition: all 2s ease;
 
+}
+#link{
+    z-index: 3;
 }
 .AssignmentImg{
     width: 100%;
@@ -430,7 +439,7 @@ nav ul li a:hover {
     bottom: 10px;
     left:25px;
     text-align: center;
-    color: white;
+    color: #0017ff;
     z-index: 2;
     width: 80%;
 }
@@ -440,7 +449,7 @@ nav ul li a:hover {
     left:25px;
     text-align: center;
     font-size: 30px;
-    color: white;
+    color: #0017ff;
     z-index: 2;
     width: 80%;
 }
@@ -452,12 +461,74 @@ nav ul li a:hover {
     text-align: center;
     color: #32D5E3;
 }
+.r ul {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 3;
+
+    opacity: 0;
+
+    transform: translate(-50%, 20px);
+
+    /* Animation */
+    transition: 0.5s ease-in-out;
+
+}
+
+.r ul li {
+    margin: 5px 0;
+    opacity: 0;
+    transform: translateY(200px);
+    transition:  0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+    position: relative;
+    top:50px
+}
+
+.r ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.r:hover p {
+    opacity: 0;
+    transform: scale(1.15);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.r:hover ul {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.r:hover ul li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.r ul li a:hover {
+    color: #00f5d4;
+
+}
+
+
 #projects>h2{
     text-align: center;
     color: #32D5E3;
 }
 #projects{
-    background: linear-gradient( #005E9D, #002137);
+    background: radial-gradient( #005E9D, #002137);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -484,7 +555,7 @@ nav ul li a:hover {
 }
 #projects #leftDiv{
     background-color: #3A86FF;
-
+    overflow: hidden;
     margin:10px;
     height: 350px;
     width: 350px;
@@ -496,7 +567,7 @@ nav ul li a:hover {
 }
 #projects #rightDiv{
     background-color: #3A86FF;
-
+    overflow: hidden;
     margin:10px;
     height: 350px;
     width: 350px;
@@ -511,10 +582,36 @@ nav ul li a:hover {
     height: 100%;
     border-radius: 10%;
 }
+#projects .imgDiv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    transition: transform 3000ms ease-out;
+}
+#projects .imgDiv:hover img{
+    transform: scale(1.2);
+}
 #rightDiv img{
     width: 100%;
     height: 100%;
     border-radius: 10%;
+}
+.imgDiv ul{
+    position: absolute;
+    top: -16px;
+    left: 0%;
+
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+}
+.imgDiv:hover ul{
+    opacity: 1;
 }
 
 #gallery>h2{
@@ -524,7 +621,7 @@ nav ul li a:hover {
 }
 
 #gallery{
-    background: linear-gradient( #005E9D, #002137);
+    background: radial-gradient( #005E9D, #002137);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -566,7 +663,7 @@ nav ul li a:hover {
     transform: scale(1.15);
 }
 #contact{
-    background: linear-gradient( #005E9D, #002137);
+    background: radial-gradient( #005E9D, #002137);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -647,6 +744,16 @@ button{
     display: inline-flex;
     align-items: center;
     gap:20px;
+}
+#contact .contact-content input{
+    border:4px solid #30a2a6;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #30a2a6;
+}
+#contact .contact-content textarea{
+    border:4px solid #30a2a6;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #30a2a6;
 }
 #gh>#name{
     background: #3A86FF;
@@ -887,18 +994,39 @@ footer div{
     .content-p h3,h4{
         font-size: 10px;
     }
-    .EduImg{
-        width: 25px;
-    }
     .LeftImg{
         position: absolute;
-        left: 10px;
-        top: 13px;
+        left: 4px;
+        top: 4px;
+
     }
     .RightImg{
         position: absolute;
-        right: 10px;
-        top: 13px;
+        left: 4px;
+        top: 4px;
+    }
+    #education #aqui{
+
+        width: 50px;
+    }
+    #education #mihindu{
+        width: 40px;
+        height: 45px;
+    }
+    #education #open{
+        width: 50px;
+        height: 50px;
+    }
+    #education #htbc{
+        width: 50px;
+        height: 50px;
+    }
+    #education #ijse{
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 5px;
+        top:-5px;
     }
     .Dot{
         margin-top: 30px;
