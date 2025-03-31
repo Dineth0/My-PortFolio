@@ -408,9 +408,10 @@ nav ul li a:hover {
     height: 250px;
     margin: auto;
     position: relative;
-    border-radius: 10%;
+    border-radius: 5%;
     overflow: hidden;
     transition: all 2s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.85) 0px -12px 30px, rgba(0, 0, 0, 0.83) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
 #link{
@@ -420,7 +421,7 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     position: relative;
-    border-radius: 10%;
+    border-radius: 5%;
     z-index: 0;
     display: block;
 }
@@ -433,7 +434,7 @@ nav ul li a:hover {
    height: 100%;
     background: linear-gradient(to bottom right, rgba(68, 245, 8, 0.5), rgba(4, 232, 253, 0.8));
     opacity: 0.5;
-    border-radius: 10%;
+    border-radius: 5%;
     z-index: 1;
 }
 .r p{
@@ -450,7 +451,7 @@ nav ul li a:hover {
     bottom: 170px;
     left:25px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: #0017ff;
     z-index: 2;
     width: 80%;
@@ -550,8 +551,8 @@ nav ul li a:hover {
     gap:20px;
 }
 #projects .project-content{
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
 
     margin:10px
 }
@@ -562,7 +563,7 @@ nav ul li a:hover {
     height: 350px;
     width: 350px;
     position: relative;
-    left: 60px;
+    left: 30px;
     top: 0;
     border-radius: 10%;
     box-shadow: 3px 3px 30px #e0c5c5;
@@ -574,7 +575,7 @@ nav ul li a:hover {
     height: 350px;
     width: 350px;
     position: relative;
-    left: 50px;
+    left: 35px;
     top: 0px;
     border-radius: 10%;
     box-shadow: 3px 3px 30px #e0c5c5;
@@ -755,14 +756,43 @@ button{
     gap:20px;
 }
 #contact .contact-content input{
-    border:4px solid #30a2a6;
+    border:3px solid #30a2a6;
     border-radius: 5px;
-    box-shadow: 4px 4px 4px #30a2a6;
+    background: #27548A;
 }
-#contact .contact-content textarea{
-    border:4px solid #30a2a6;
+#contact .contact-content input{
+    width: 300px;
+    height: 30px;
+    border:3px solid #30a2a6;
     border-radius: 5px;
-    box-shadow: 4px 4px 4px #30a2a6;
+    outline: none;
+}
+#contact .contact-content input:focus{
+    border-color: #427ea4;
+
+}
+#contact #contactButton{
+    background: #57B4BA;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    left: 120px;
+    top: 10px;
+}
+#contactButton:hover{
+    background-color: #0e278c;
+
+}
+
+#contact .contact-content textarea{
+    border:3px solid #30a2a6;
+    border-radius: 5px;
+    outline: none;
+    background: #27548A;
 }
 #gh>#name{
     background: #3A86FF;
@@ -844,14 +874,63 @@ footer div{
         font-size: 50px;
     }
 }
-@media all and (max-width: 780px) {
+@media all and (max-width: 1070px) {
+
+    #about .about-content{
+        width: 400px;
+        height: 500px;
+        margin:10px;
+        position: relative;
+        bottom: 10px;
+    }
+
+}
+@media all and (max-width: 900px) {
     #about-container{
         display: flex;
         flex-direction: column;
 
     }
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 600px) {
+    #imgDiv{
+
+        margin:10px;
+        height: 450px;
+        width: 350px;
+        position: relative;
+        left: 10px;
+        top: 30px;
+    }
+    #about h1{
+        text-align: center;
+        color: #00F5D4;
+        -webkit-text-stroke-color: #41526D;
+    }
+    #about .about-content{
+        width: 380px;
+        height: 480px;
+
+        margin:10px
+    }
+    #about #pDiv{
+        margin:10px;
+        height: 450px;
+        width: 350px;
+        position: relative;
+        left: 10px;
+        top: 30px;
+
+    }
+    #about p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 23px;
+        color: white;
+    }
+}
+
+@media all and (max-width: 450px) {
     #about-container{
         display: flex;
         flex-direction: column;
@@ -866,7 +945,8 @@ footer div{
         position: relative;
         left: 30px;
         top: 30px;
-        border-radius: 10%;
+        border-top-left-radius: 10%;
+        border-bottom-right-radius: 10%;
         box-shadow: 3px 3px 30px #e0c5c5;
     }
     #about h1{
@@ -889,17 +969,18 @@ footer div{
         position: relative;
         left: 30px;
         top: 30px;
-        border-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 10%;
         box-shadow: 3px 3px 30px #e0c5c5;
     }
     #about img{
         position: relative;
-        width: 260px;
-        height: 330px;
+        width: 100%;
+        height: 100%;
         background: #67a7e2;
-        left:13px;
-        top:7px;
-        border-radius: 10%;
+
+        border-top-left-radius: 10%;
+        border-bottom-right-radius: 10%;
     }
     #about p {
         text-align: center;
@@ -912,7 +993,21 @@ footer div{
     #project-container{
         display: flex;
         flex-direction: column;
-
+        align-items: center;
+    }
+}
+@media all and (max-width: 450px) {
+    #project-container .imgDiv{
+        width: 300px !important;
+        height: 300px  !important;
+        position: relative  !important;
+        right: -30px  !important;
+        display: block;
+        margin-left: 32px !important;
+    }
+    .imgDiv img{
+        width: 100%  !important;
+        height: 100%  !important;
     }
 }
 @media all and (max-width: 1000px){
@@ -1040,6 +1135,17 @@ footer div{
     }
     .gallery-content {
         width: 100%;
+    }
+}
+@media all and (max-width: 380px) {
+    .gallery-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .gallery-item {
+        width:275px;
+        margin-left: 10px;
+
     }
 }
 @media all and (max-width: 768px){
