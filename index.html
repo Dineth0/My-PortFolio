@@ -481,13 +481,13 @@
 
         <div class="contact-content">
             <div class="contact-info" id="LeftContact">
-                <h3>-Get in Touch-</h3>
+                <h3 id="h3">-Get in Touch-</h3>
 
 
                     <p id="headP">Feel free to reach out and share your experience with me. I'd love to hear your feedback and thoughts on how you liked it.Email me with any questions or inquiries. I'll happy to answer your questions and set up a meeting with you.</p>
 
 
-                <br>
+            <div class="icon">
 
                 <div class="contact-item">
                     <img src="assests/images/name.png"  alt="name"></img>
@@ -518,12 +518,13 @@
                     <a href="https://x.com/DinethNakandala" target="_blank"><img src="assests/images/X.png"  alt="X"></a>
                 </div>
             </div>
+            </div>
         </div>
 
-        <div class="contact-content">
+        <div class="contact-content" id="contact-content">
             <div class="contact-info" id="RightContact">
                 <h3>-Hire Me-</h3>
-
+            <form>
                 <div>
                     <input type="text" id="name" placeholder="Enter your Name" name="enter name"></input>
                 </div>
@@ -541,14 +542,16 @@
                 </div>
 
                 <br>
-
                 <div>
                     <textarea id="message" placeholder="Enter your Message" rows="10" cols="45" name="enter message"></textarea>
                 </div>
 
-                <button type="submit" id="contactButton">Send</button>
+                <div>
+                    <button type="submit" id="contactButton">Send</button>
 
+                </div>
 
+            </form>
 
 
             </div>

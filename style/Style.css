@@ -1,4 +1,3 @@
-
 html, body{
     overflow-x: hidden;
     margin: 0;
@@ -347,7 +346,7 @@ nav ul li a:hover {
 .DivImg{
     width: 125px;
     aspect-ratio: 1/1;
-    
+
     display: flex;
     position: absolute;
     top: 0;
@@ -431,8 +430,8 @@ nav ul li a:hover {
     top: 0;
     left: 0;
     width: 100%;
-   height: 100%;
-    background: linear-gradient(to bottom right, rgba(68, 245, 8, 0.5), rgba(4, 232, 253, 0.8));
+    height: 100%;
+    background: #9EC6F3;
     opacity: 0.5;
     border-radius: 5%;
     z-index: 1;
@@ -442,7 +441,7 @@ nav ul li a:hover {
     bottom: 10px;
     left:25px;
     text-align: center;
-    color: #0017ff;
+    color: #011F3C;
     z-index: 2;
     width: 80%;
 }
@@ -452,7 +451,7 @@ nav ul li a:hover {
     left:25px;
     text-align: center;
     font-size: 20px;
-    color: #0017ff;
+    color: #011F3C;
     z-index: 2;
     width: 80%;
 }
@@ -684,127 +683,91 @@ nav ul li a:hover {
     padding: 10px 0;
     position: relative;
 }
-#contact-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap:20px;
-
-}
-#contact .contact-content{
-    width: 550px;
-    height: 500px;
-    /*background-color: rgba(161, 69, 69, 0.5);*/
-    margin:10px
-}
-#contact .contact-content .contact-info{
-    /*background-color: #3A86FF;*/
-    align-items: center;
-    margin:10px;
-    height: 450px;
-    width: 500px;
-}
-#contact .contact-content #LeftContact{
-    position: relative;
-    left: 14px;
-}
-#contact .contact-content #RightContact{
-    position: relative;
-    left: 14px;
-}
-#contact h3{
-    text-align: center;
-}
-#contact p{
-
-    align-items: center;
-    color: #ffffff;
-}
-.contact-info span {
-    color: #ffffff;
-}
-.contact-info span a{
-    color: #ffffff;
-}
-#contact #links{
-    position: relative;
-    top: 30px;
-    left: 20px;
-}
-#contact #links a{
-    margin: 10px;
-}
-#contact img {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    top: 1px;
-}
-#contact h3 {
-    color: #32D5E3;
-}
-#contact h1 {
+#contact h1{
+    font-size: 36px;
+    margin-bottom: 20px;
     color: #00F5D4;
     text-align: center;
+
 }
-button{
-    background: #427ea4;
+#contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+#LeftContact{
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    max-width: 500px;
+}
+#h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #32D5E3;
+    text-align: center;
+}
+#headP{
+    font-size: 16px;
+    line-height: 1.6;
 }
 .contact-item{
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap:20px;
+    margin-bottom: 10px;
 }
-#contact .contact-content input{
-    border:3px solid #30a2a6;
-    border-radius: 5px;
-    background: #27548A;
+#links{
+    margin-top: 15px;
 }
-#contact .contact-content input{
-    width: 300px;
-    height: 30px;
-    border:3px solid #30a2a6;
-    border-radius: 5px;
-    outline: none;
+.contact-item img{
+    width: 20px;
+    margin-right: 10px;
 }
-#contact .contact-content input:focus{
-    border-color: #427ea4;
-
+#links a img{
+    width: 25px;
+    margin : 5px;
+    transition: transform 0.3s;
 }
-#contact #contactButton{
-    background: #57B4BA;
-    width: 150px;
-    height: 30px;
-    border-radius: 15px;
+#links a img:hover{
+    transform: scale(1.15);
+}
+#RightContact {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    max-width: 500px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
     border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    left: 120px;
-    top: 10px;
-}
-#contactButton:hover{
-    background-color: #0e278c;
-
-}
-
-#contact .contact-content textarea{
-    border:3px solid #30a2a6;
     border-radius: 5px;
-    outline: none;
-    background: #27548A;
+    background-color: #81BFDA;
 }
-#gh>#name{
-    background: #3A86FF;
+#contactButton{
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    left: 165px;
+    width: 80px;
+    background-color: #0D92F4;
 }
-#em>#email{
-    background: #3A86FF;
-}
-#sub>#subject{
-    background: #3A86FF;
-}
-#text>#message{
-    background: #3A86FF;
+button:hover{
+    background-color: white;
 }
 #footer{
     background-color: #2976a6;
@@ -1044,80 +1007,88 @@ footer div{
         right:20px;
     }
 }
-@media all and (max-width: 1100px) {
-    #contact-container {
-        flex-direction: column;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-    }
 
-    #contact-container div {
-        width: calc(50% - 10px);
-        height: auto;
-        margin: 10px;
+@media all and (max-width: 768px){
+    #contact-container{
+        flex-direction: column;
+        padding: 15px;
     }
-    .contact-content {
-        width: 90%;
+    #LeftContact, #RightContact{
+        max-width: 100%;
+        margin-bottom: 20px;
     }
-    #contact #links {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        position: relative;
-        left: 70px;
+    h1{
+        font-size: 28px;
     }
     #headP{
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-        width: 80%;
-
+        font-size: 14px;
     }
-    .contact-info #LeftContact{
-        position: absolute;
-        left: 100px;
+    button{
+        padding: 8px;
+    }
+    .contact-item span{
+        font-size: 13px;
     }
 
 }
-@media all and (max-width: 500px) {
-    #headP{
-        font-size: 13px;
-        text-align: left;
-        position: relative;
-        right: 25px;
-    }
-    .contact-info #LeftContact{
-        width: 300px;
-        height: auto;
+@media all and (max-width: 480px) {
+    #contact-container{
         padding: 10px;
     }
 
-    #contact img{
-        width: 25px;
-        height: 25px;
+    h1{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    #headP{
+        font-size: 12px;
+    }
+    button{
+        padding: 8px;
+    }
+    .contact-item img{
+        width: 16px;
+    }
+    #links a img{
+        width: 20px;
     }
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 320px) {
+    #contact-container{
+        padding: 5px;
+    }
+
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    h3{
+        font-size: 16px;
+    }
     #headP{
-        font-size: 13px;
-        text-align: left;
-        position: relative;
-        right: 79px;
+        font-size: 12px;
+        text-align: justify;
     }
-    #contact h3{
-        position: relative;
-        right: 79px;
+    .contact-item{
+        flex-direction: column;
+        align-items: flex-start;
     }
-    #links a{
-        position: relative;
-        right: 50px;
+    .contact-item img{
+        width: 14px;
+        margin-bottom: 5px;
     }
-    #RightContact input, textarea{
-        position: relative;
-        right: 30px;
+    #links a img{
+        width: 18px;
+        margin:3px;
+    }
+    input,textarea{
+        padding: 8px;
+    }
+    button{
+        padding: 6px;
+        font-size: 12px;
     }
 }
 @media all and (max-width: 1080px) {
@@ -1146,6 +1117,46 @@ footer div{
         width:275px;
         margin-left: 10px;
 
+    }
+}
+@media all and (max-width: 1000px){
+
+    .content-p h3,h4{
+        font-size: 13px;
+    }
+    .LeftImg{
+        position: absolute;
+        left: 2px !important;
+        top: 4px;
+
+    }
+    .RightImg{
+        position: absolute;
+        left: 4px;
+        top: 4px;
+    }
+    #education #aqui{
+
+        width: 60px;
+    }
+    #education #mihindu{
+        width: 50px;
+        height: 55px;
+    }
+    #education #open{
+        width: 55px;
+        height: 55px;
+    }
+    #education #htbc{
+        width: 70px;
+        height: 70px;
+    }
+    #education #ijse{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 5px;
+        top:-5px;
     }
 }
 @media all and (max-width: 768px){
