@@ -5,7 +5,40 @@ html, body{
 *{
     box-sizing: border-box;
 }
+.star-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Prevents interaction */
+    z-index: 2;
+}
 
+/* Individual Stars */
+.star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    animation: move-star linear infinite;
+    opacity: 0.8;
+}
+
+/* Star Movement Animation */
+@keyframes move-star {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh) translateX(10vw);
+        opacity: 0;
+    }
+}
 header{
     position: fixed;
     width: 100vw;
@@ -78,24 +111,54 @@ nav ul li a:hover {
     opacity: 0.7;
     z-index: -1;
 }
-#home>h1{
+#home .homeH1{
     font-family: "Kristen ITC", sans-serif;
     color: aliceblue;
     font-size: 90px;
-    text-align: center;
+
     text-shadow: 10px 10px 20px #6d93e0;
     position: relative;
-    top: 20px;
+
 
 }
 #home #dineth{
-    position: relative;
-    bottom:20px;
+    position: absolute;
+    right: -490px;
+    top:170px;
+    animation-name: moove;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes moove {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-830px);
+    }
+}
+#home #hello{
+    position: absolute;
+    left: -230px !important;
+    top:50px;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes move {
+    from{
+        transform: translateX(-230px);
+    }
+    to{
+        transform: translateX(750px);
+    }
+
 }
 #home a{
     position: relative;
-    left: 0;
-    top: 30px;
+    top:370px;
     margin: 10px;
 }
 #home>h2{
@@ -105,6 +168,10 @@ nav ul li a:hover {
     font-weight: bold;
     position: relative;
     top: 1px;
+}
+#home .subtopic{
+    position: relative;
+    top:370px;
 }
 #home>h3{
     font-family: "Jacques Francois Shadow", sans-serif;
@@ -662,13 +729,14 @@ nav ul li a:hover {
     position: relative;
     left: 25px;
     top: 20px;
+    overflow: hidden;
 }
 .gallery-item img{
     width: 100%;
     height: 100%;
     transition: transform 2000ms ease-out;
 }
-.gallery-item img:hover{
+ .gallery-item:hover img{
     transform: scale(1.15);
 }
 #contact{
@@ -694,7 +762,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
@@ -766,8 +834,8 @@ input,textarea{
     width: 80px;
     background-color: #0D92F4;
 }
-button:hover{
-    background-color: white;
+#contactButton:hover{
+    background-color: #45b8b3;
 }
 #footer{
     background-color: #2976a6;
