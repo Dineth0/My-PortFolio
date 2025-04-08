@@ -1006,25 +1006,25 @@ footer div{
         width: calc(100% - 20px);
     }
 }
-@media all and (max-width: 880px) {
-    #project-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+@media all and (max-width: 768px) {
+    .imgDiv{
+        height: 300px;
+        width: 90%;
     }
+    .project-content{
+        max-width: 100%;
+    }
+
 }
-@media all and (max-width: 450px) {
-    #project-container .imgDiv{
-        width: 300px !important;
-        height: 300px  !important;
-        position: relative  !important;
-        right: -30px  !important;
-        display: block;
-        margin-left: 32px !important;
+@media all and (max-width: 480px) {
+    .imgDiv{
+        height: 250px;
     }
-    .imgDiv img{
-        width: 100%  !important;
-        height: 100%  !important;
+    .imgDiv ul li a {
+        font-size: 18px;
+    }
+    .project-content h4{
+        font-size: 18px;
     }
 }
 
