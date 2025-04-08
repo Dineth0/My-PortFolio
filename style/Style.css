@@ -668,7 +668,7 @@ nav ul li a:hover {
     height: auto;
     top: 0;
     left: 0;
-    padding: 10px 0;
+    padding: 20px 0;
     position: relative;
 
 }
@@ -676,23 +676,25 @@ nav ul li a:hover {
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
+    padding: 0 10px;
 }
 .gallery-container>.gallery-content{
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
 
 }
 .gallery-item {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    aspect-ratio: 1/1;
     background-color: red;
     position: relative;
-    left: 25px;
-    top: 20px;
     overflow: hidden;
+    border-radius: 10px;
+
 }
 .gallery-item img{
     width: 100%;
