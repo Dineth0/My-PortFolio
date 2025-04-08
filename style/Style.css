@@ -996,6 +996,26 @@ footer div{
         color: white;
     }
 }
+@media all and (max-width: 1060px) {
+    #works-container div{
+        width: calc(50% - 15px);
+    }
+}
+@media all and (max-width: 600px) {
+    #works-container div{
+        width: calc(100% - 20px);
+    }
+    #works-container .card{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media all and (max-width: 400px) {
+    #works-container div{
+        width: calc(100% - 20px);
+    }
+}
 @media all and (max-width: 880px) {
     #project-container{
         display: flex;
