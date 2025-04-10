@@ -681,7 +681,7 @@ nav ul li a:hover {
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     padding: 0 10px;
@@ -690,7 +690,7 @@ nav ul li a:hover {
 .gallery-container>.gallery-content{
     width: 100%;
     max-width: 300px;
-    margin: 0 auto;
+    margin: 10px;
 }
 .gallery-item {
     width: 100%;
