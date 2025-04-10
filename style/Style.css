@@ -81,26 +81,37 @@ nav ul li a:hover {
     opacity: 0.7;
     z-index: -1;
 }
-#home .homeH1{
-    font-family: "Kristen ITC", sans-serif;
-    color: aliceblue;
-    font-size: 90px;
 
-    text-shadow: 10px 10px 20px #6d93e0;
-    position: relative;
-
-
-}
 #home #dineth{
-    position: absolute;
-    right: -50vw;
-    top:20vh;
-    animation-name: moove;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
+    position: relative;
+    bottom:20px;
 }
-@keyframes moove {
+#home a{
+    position: relative;
+    left: 0;
+    top: 30px;
+    margin: 10px;
+}
+#home>h2{
+    font-family: "Jacques Francois Shadow", sans-serif;
+    color: #b7b4b4;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: 1px;
+}
+#home>h3{
+    font-family: "Jacques Francois Shadow", sans-serif;
+
+    color: #b7b4b4;
+    font-weight: bold;
+    position: relative;
+    top: 1px;
+}
+#home{
+    text-align: center;
+}
+/*@keyframes moove {
     from{
         transform: translateX(0);
     }
@@ -125,34 +136,27 @@ nav ul li a:hover {
         transform: translateX(75vw);
     }
 
-}
-#home a{
-    position: relative;
-    top:370px;
-    margin: 10px;
-}
-#home>h2{
-    font-family: "Jacques Francois Shadow", sans-serif;
-    color: #b7b4b4;
-    text-align: center;
-    font-weight: bold;
-    position: relative;
-    top: 1px;
-}
-#home .subtopic{
-    position: relative;
-    top:370px;
-}
-#home>h3{
-    font-family: "Jacques Francois Shadow", sans-serif;
+}*/
 
-    color: #b7b4b4;
-    font-weight: bold;
-    position: relative;
-    top: 1px;
-}
-#home{
+.homeH1{
+    font-family: "Kristen ITC", sans-serif;
+    color: aliceblue;
+    font-size: 90px;
     text-align: center;
+    text-shadow: 10px 10px 20px #6d93e0;
+    position: relative;
+    top: 20px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes bounce {
+    from {
+        transform: scale(0);
+    }
+    to {
+       transform: scale(1);
+    }
 }
 #about{
     background: radial-gradient( #005E9D, #002137);    position: relative;
@@ -409,6 +413,7 @@ nav ul li a:hover {
     bottom: 0;
     margin: auto;
 }
+
 
 #assinments{
     background: radial-gradient( #005E9D, #002137);
@@ -843,35 +848,29 @@ footer div{
     }
 }
 
-@media all and (max-width: 550px){
-    #home h1{
+@media all and (max-width: 550px) {
+    .homeH1 {
         font-size: 70px;
     }
 }
-@media all and (max-width: 720px){
-    #home h1{
+@media all and (max-width: 720px) {
+    .homeH1 {
         font-size: 70px;
     }
 }
-@media all and (max-width: 350px){
-    #home h1{
-        font-size: 50px;
-    }
-    #home a{
-        margin: 5px;
-    }
-    #home h2, h3{
-        font-size: 15px;
-    }
-}
-@media all and (max-width: 450px){
-    #home h1{
+@media all and (max-width: 450px) {
+    .homeH1 {
         font-size: 60px;
     }
 }
-@media all and (max-width: 330px){
-    #home h1{
+@media all and (max-width: 350px) {
+    .homeH1 {
         font-size: 50px;
+    }
+}
+@media all and (max-width: 330px) {
+    .homeH1 {
+        font-size: 45px;
     }
 }
 @media all and (max-width: 1070px) {
