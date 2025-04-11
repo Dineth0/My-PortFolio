@@ -899,16 +899,24 @@ footer div{
 @media all and (max-width: 450px) {
     .homeH1 {
         font-size: 60px;
+        position: relative;
+        top:60px;
     }
     #home h2{
         font-size: 15px;
+        position: relative;
+        top:60px;
     }
     #home h3{
         font-size: 13px;
+        position: relative;
+        top:60px;
     }
     #home img{
         width: 20px;
         height: 20px;
+        position: relative;
+        top:70px;
     }
 }
 /*@media all and (max-width: 350px) {
