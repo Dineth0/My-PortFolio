@@ -89,7 +89,7 @@ nav ul li a:hover {
 #home a{
     position: relative;
     left: 0;
-    top: 30px;
+    top: 20px;
     margin: 10px;
 }
 #home>h2{
@@ -112,6 +112,9 @@ nav ul li a:hover {
 }
 #home{
     text-align: center;
+}
+#home a img:hover{
+    transform: scale(1.15);
 }
 #home img{
     width: 30px;
@@ -147,7 +150,7 @@ nav ul li a:hover {
 .homeH1{
     font-family: "Kristen ITC", sans-serif;
     color: aliceblue;
-    font-size: 90px;
+    font-size: 80px;
     text-align: center;
     text-shadow: 10px 10px 20px #6d93e0;
     position: relative;
@@ -189,7 +192,7 @@ nav ul li a:hover {
     top: -5px;
     border-top-left-radius: 10%;
     border-bottom-right-radius: 10%;
-    box-shadow: 3px 3px 30px #e0c5c5;
+     box-shadow: #212121 10px 10px 10px;
 }
 #about h1{
     text-align: center;
@@ -225,6 +228,7 @@ nav ul li a:hover {
     border-bottom-right-radius: 10%;
 }
 #about p {
+    font-family: "Jacques Francois Shadow", sans-serif;
     text-align: center;
     font-weight: bold;
     font-size: 26px;
@@ -341,7 +345,7 @@ nav ul li a:hover {
     box-shadow: 3px 3px 30px #e0c5c5;*/
 }
 .Education-content:hover{
-    transform: scale(1.15);
+    transform: scale(1.1);
 
 }
 
@@ -460,7 +464,7 @@ nav ul li a:hover {
     border-radius: 5%;
     overflow: hidden;
     transition: all 2s ease;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.85) 0px -12px 30px, rgba(0, 0, 0, 0.83) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: #a09292 10px 10px 5px;
 
 }
 #link{
@@ -615,7 +619,7 @@ nav ul li a:hover {
     max-width: 350px;
     margin: 0 auto;
     border-radius: 10%;
-    box-shadow: 3px 3px 3px #e0c5c5;
+    box-shadow: #a09292 10px 10px 5px;
     position: relative;
 }
 #leftDiv img{
@@ -790,6 +794,15 @@ nav ul li a:hover {
     background-color: rgba(255,255,255,0.1);
     border-radius: 10px;
 }
+#contact span {
+    color: white;
+}
+#contact p{
+    color: white;
+}
+#contact a {
+    color: white;
+}
 form{
     display: flex;
     flex-direction: column;
@@ -803,15 +816,14 @@ input,textarea{
     background-color: #81BFDA;
 }
 #contactButton{
-    color: black;
+    color: #f5f0f0;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    position: relative;
-    left: 165px;
-    width: 80px;
+    margin: 0 auto;
+    display: block;
     background-color: #0D92F4;
 }
 #contactButton:hover{
@@ -1061,9 +1073,9 @@ footer div{
     }
 }
 @media all and (max-width: 768px) {
-    .imgDiv{
-        height: 300px;
+    .project-content{
         width: 90%;
+
     }
     .project-content{
         max-width: 100%;
@@ -1073,6 +1085,11 @@ footer div{
 @media all and (max-width: 480px) {
     .imgDiv{
         height: 250px;
+        width: 70%;
+    }
+    .project-content{
+        width: 70%;
+
     }
     .imgDiv ul li a {
         font-size: 18px;
@@ -1196,10 +1213,7 @@ footer div{
     input,textarea{
         padding: 8px;
     }
-    button{
-        padding: 6px;
-        font-size: 12px;
-    }
+
   
 }
 
