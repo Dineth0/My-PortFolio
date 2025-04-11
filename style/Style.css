@@ -192,7 +192,7 @@ nav ul li a:hover {
     top: -5px;
     border-top-left-radius: 10%;
     border-bottom-right-radius: 10%;
-     box-shadow: #212121 10px 10px 10px;
+    box-shadow: 3px 3px 30px #e0c5c5;
 }
 #about h1{
     text-align: center;
