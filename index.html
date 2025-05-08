@@ -6,7 +6,6 @@
     <meta name="keywords" content="html">
     <meta name="description" content="welcome to my website. I'm Dineth @ IJSE">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/Style.css"></link>
     <link rel="stylesheet" href="style/Header.css"></link>
     <link rel="stylesheet" href="style/Skills.css"></link>
     <link rel="stylesheet" href="style/Home.css"></link>
@@ -17,8 +16,9 @@
     <link rel="stylesheet" href="style/Contact.css"></link>
 
     <link rel="stylesheet" href="lib/normalize.css">
-    <link rel="stylesheet" href="lib/fontawesome-free-6.7.2-web/css/all.min.css/">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome CDN (latest version) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 
 </head>
 <body>
@@ -66,7 +66,7 @@
         <h1>About Me</h1>
         <div id="about-container" >
 
-            <div class="about-content">
+            <div data-aos="fade-up" class="about-content">
                 <div id="imgDiv">
                     <img src="assets/images/About.png" width = "250" height="300" alt="Me">
                 </div>
@@ -581,11 +581,9 @@
         </span>
     </footer>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-
-        AOS.init();
+    AOS.init();
 
 </script>
 </body>
