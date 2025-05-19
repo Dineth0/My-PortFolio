@@ -62,6 +62,7 @@
     opacity: 0.5;
     border-radius: 5%;
     z-index: 1;
+    pointer-events: none;
 }
 .r p{
     position: absolute;

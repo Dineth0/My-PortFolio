@@ -26,11 +26,13 @@ header{
 
 
 }
-header button{
+header Button{
     display: none;
     position: relative;
     top: 10px;
     right: 150px;
+    background: transparent;
+    outline: none;
 }
 header>nav>img{
     position:relative ;

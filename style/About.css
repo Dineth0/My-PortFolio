@@ -68,6 +68,9 @@
 
 
 
+
+
+
 @media all and (max-width: 1070px) {
 
     #about .about-content{
@@ -149,10 +152,10 @@
         -webkit-text-stroke-color: #41526D;
     }
     #about .about-content{
-        width: 380px;
-        height: 480px;
-
-        margin:10px
+        width: 100%;
+        max-width: 400px;
+        height: auto; /* change from 500px */
+        margin: 50px auto;
     }
     #about #pDiv{
         background-color: #3A86FF;
