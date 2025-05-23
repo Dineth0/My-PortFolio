@@ -110,6 +110,16 @@
 /*    }*/
 /*}*/
 
+.animate__animated.animate__bounceInLeft {
+    --animate-duration: 2500ms;
+}
+.animate__animated.animate__bounceInRight {
+    --animate-duration: 2500ms;
+}
+.animate__animated.animate__heartBeat {
+    --animate-duration: 2500ms;
+}
+
 
 
 @media all and (max-width: 550px) {
