@@ -34,7 +34,20 @@
             <li><a href="#contact">Contact Me</a></li>
         </ul>
     </nav>
-    <button id="navButton"><i class="fa-solid fa-bars" style="color: #11e8bd;"></i></button>
+    <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="dropDownMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#works">My Works</a></li>
+        <li><a href="#gallery">My Gallery</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+    </div>
 
 
 </header>
@@ -510,7 +523,7 @@
 
             <div class="project-content">
                 <h4>Mental Health Therapy Center</h4>
-                <div id="righDiv" class="imgDiv">
+                <div id="righDiv1" class="imgDiv">
                     <img src="assets/images/serenityProject.PNG"></img>
                     <ul>
                         <li>
@@ -519,7 +532,21 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="project-content">
+                <h4>Mental Health Therapy Center</h4>
+                <div id="righDiv2" class="imgDiv">
+                    <img src="assets/images/pos.png"></img>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/Dineth0/ORM-CW">View Project</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
+
 
 
     </section>
@@ -674,6 +701,22 @@
 <script>
     AOS.init();
 
+</script>
+
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const dropdownMenu = document.querySelector('.dropDownMenu');
+    const overlay = document.querySelector('.overlay');
+
+    toggleBtn.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('open');
+        overlay.classList.toggle('show');
+    });
+
+    window.addEventListener('scroll', () => {
+        dropdownMenu.classList.remove('open');
+        overlay.classList.remove('show');
+    });
 </script>
 </body>
 </html>
