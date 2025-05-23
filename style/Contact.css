@@ -71,12 +71,15 @@
 }
 #contact span {
     color: white;
+    font-family: "Jacques Francois Shadow", sans-serif;
 }
 #contact p{
     color: white;
+    font-family: "Jacques Francois Shadow", sans-serif;
 }
 #contact a {
     color: white;
+    font-family: "Jacques Francois Shadow", sans-serif;
 }
 form{
     display: flex;
